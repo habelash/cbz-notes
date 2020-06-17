@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'notes/style.css'%}">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Rubik" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static 'images/Kishor-Publications.png'%}" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <!--START META DATA PAGE DESCRIPTION-->
+    <meta name="Author" content="Calmar Solutions Schweiz - Erin McGowan - www.calmarsolutions.ch">
+    <meta name="Copyright" content="Calmar Solutions">
+    <meta name="Credit" content="https://thenounproject.com/">
+    <meta name="description" content="Margs Surfcamp Margaret River">
+    <meta name="keywords" content="Surfing, Camping, Margaret River, Western Australia">
+<!--END META DATA PAGE DESCRIPTION-->
+    <title>Notes</title>
+</head>
+<body>
+<a href="#top"><img class="arrow_image" src="{% static 'notes/images/arrow.svg'%}"></a>
+<a name="top"></a>
+<div id="change_class" class="flex_container section menu_section">
+	<div class="flex_item branding"><p></p></div>
+	<div class="flex_item menu_item dropdown">
+		<p>Menu</p>
+		<div class="dropdown-content">
+			<div class="menu_item menu_item_inside"><a href="{% url 'index' %}"><p>Home</p></a></div>
+        </div>
+	</div>
+	<div class="flex_item menu_item menu_item_outside"><a href="{% url 'index' %}"><p>Home</p></a></div>
+</div>
+
+
+<div class="section page second_section">
+<a name="team"></a>
+	<div class="section_container second_section_container flex_container flex_center">
+		<div class="text header_text text_grad_purple_yellow">
+			<h1>{{ subject }}</h1>
+		</div>
+        {% for sub in subs %}
+		<a href="{{ sub.files.url }}">
+			<div class="feature flex_feature_item feature1">
+				<h2>{{ sub.sub_name }}</h2>
+				<p>
+            </div>
+		</a>
+        {% endfor %}
+	</div>
+</div>
+
+
+<div id="map"></div>
+
+<div class="section footer_section">
+	<a href="https://www.calmarsolutions.ch"><p class="footer_text"></p></a>
+</div>
+<!--SCRIPT SECTION-->
+
+
+<script src="{% static 'notes/script.js' %}"></script>
+
+</body>
+</html> 

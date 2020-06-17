@@ -30,39 +30,66 @@
 					<section id="intro" class="main">
 						<span class="icon fa-diamond major"></span>
 						<ul class="actions">
+                        <nav>
+                            <menu>
+                                <menuitem id="demo1">
+                                    <a href="{% url 'sem_1' %}">Sem-1</a>
+                                </menuitem>
+                            </menu>
+                        </nav>
                          <nav>
                             <menu>
                                 <menuitem id="demo1">
-                                    <a>Chemistry </a>
-                                    <menu>
-                                        {% for chems in chem %}
-                                        <menuitem><a href="{{chems.files.url}}">{{  chems.sub_name}}</a></menuitem>
-                                        {% endfor %}
-                                    </menu>
+                                    <a href="{% url 'sem_2' %}">Sem-2 </a>
+                                </menuitem>
+                            </menu>
+                        </nav>
+                        <nav>
+                            <menu>
+                                <menuitem id="demo1">
+                                    <a href="{% url 'sem_3' %}">Sem-3 </a>
+                                </menuitem>
+                            </menu>
+                        </nav>
+                        <nav>
+                            <menu>
+                                <menuitem id="demo1">
+                                    <a href="{% url 'sem_4' %}">Sem-4 </a>
+                                </menuitem>
+                            </menu>
+                        </nav>
+                        <nav>
+                            <menu>
+                                <menuitem id="demo1">
+                                    <a href="{% url 'sem_5' %}">Sem-5 </a>
+                                </menuitem>
+                            </menu>
+                        </nav>
+                        <nav>
+                            <menu>
+                                <menuitem id="demo1">
+                                    <a href="{% url 'sem_6' %}">Sem-6 </a>
+                                </menuitem>
+                            </menu>
+                        </nav>
+                         <nav>
+                            <menu>
+                                <menuitem id="demo1">
+                                    <a href="{% url 'chemistry' %}">Chemistry </a>
                                 </menuitem>
                             </menu>
                         </nav>
                         <nav>
                             <menu>
                                 <menuitem id="demo2">
-                                    <a>Zoology </a>
-                                    <menu>
-                                        {% for zoos in zoo %}
-                                        <menuitem><a href="{{zoos.files.url}}">{{  zoos.sub_name}}</a></menuitem>
-                                        {% endfor %}
-                                    </menu>
+                                    <a href="{% url 'zoology' %}">Zoology </a>
                                 </menuitem>
                             </menu>
                         </nav>
                          <nav>
                             <menu>
                                 <menuitem id="demo3">
-                                    <a>Botany</a>
-                                    <menu>
-                                        {% for bots in bot %}
-                                        <menuitem><a href="{{bots.files.url}}">{{  bo.sub_name}}</a></menuitem>
-                                        {% endfor %}
-                                    </menu>
+                                    <a href="{% url 'botany' %}">Botany</a>
                                 </menuitem>
                             </menu>
                         </nav>
@@ -82,7 +109,8 @@
 							<li><a href="https://www.facebook.com/kiccha.kishor.33" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 							<li><a href="https://www.linkedin.com/in/kicchakishor-creations-2030b718b" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="mailto: kicchakishor025@gmail.com" class="icon fa-envelope"><span class="label" >Email</span></a></li>
+							<li><a href="mailto: kicchakishor025@gmail.com" class="icon fa-envelope"><span class="label" >Email</span></a></li><br>
+                            <li class="fa fa-phone" ><span>   +91-8197221183 </span></li>
 						</ul>
                     </footer>
 
