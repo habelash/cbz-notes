@@ -264,9 +264,9 @@ z-index: 150;
 	.feature {
 		min-width: 250px;
 		max-width: 600px;
-		height: 100px;
+		height: 80px;
 		width: auto;
-		padding-left: 10px;
+		padding-left: 30px;
 		padding-right: 10px;
 		margin-right: 20px;
 		margin-left: 20px;
