@@ -30,9 +30,6 @@
 					<section id="intro" class="main">
 						<span class="icon fa-diamond major"></span>
 						<ul class="actions">
-                            {% for pdf in pdfs %}
-							<li><a href="{{pdf.files.url}}" class="button big" style="margin-top: 5px">{{ pdf.sub_name}}</a></li>
-                            {% endfor %}
                          <nav>
                             <menu>
                                 <menuitem id="demo1">
@@ -40,6 +37,30 @@
                                     <menu>
                                         {% for chems in chem %}
                                         <menuitem><a href="{{chems.files.url}}">{{  chems.sub_name}}</a></menuitem>
+                                        {% endfor %}
+                                    </menu>
+                                </menuitem>
+                            </menu>
+                        </nav>
+                        <nav>
+                            <menu>
+                                <menuitem id="demo2">
+                                    <a>Zoology </a>
+                                    <menu>
+                                        {% for zoos in zoo %}
+                                        <menuitem><a href="{{zoos.files.url}}">{{  zoos.sub_name}}</a></menuitem>
+                                        {% endfor %}
+                                    </menu>
+                                </menuitem>
+                            </menu>
+                        </nav>
+                         <nav>
+                            <menu>
+                                <menuitem id="demo3">
+                                    <a>Botany</a>
+                                    <menu>
+                                        {% for bots in bot %}
+                                        <menuitem><a href="{{bots.files.url}}">{{  bo.sub_name}}</a></menuitem>
                                         {% endfor %}
                                     </menu>
                                 </menuitem>

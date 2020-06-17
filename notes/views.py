@@ -1,11 +1,12 @@
 from django.shortcuts import render
-from .models import notes, chemisrty
+from .models import chemisrty, zoology, botany
 
 
 def index(request):
     context = {
-        "pdfs": notes.objects.all(),
-        "chem": chemisrty.objects.all()
+        "chem": chemisrty.objects.all(),
+        "zoo": zoology.objects.all(),
+        "bot": botany.objects.all()
     }
 
     return render(request, "index.html", context)
